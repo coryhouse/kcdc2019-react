@@ -4,9 +4,10 @@ Do these steps *before* you arrive at KCDC:
 1. Install [Node 10 or newer](http://nodejs.org)
 1. Install [Git](https://git-scm.com/)
 1. Install [VS Code](https://code.visualstudio.com/)
-1. Install [Prettier extension for VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-1. Install [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-1. Install [React Code Snippets extension for VS Code](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
+1. Install the following VS Code extensions
+  - [Prettier extension for VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [React Code Snippets extension for VS Code](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
 1. Click the green "Clone this template" button above.
 1. Enter a name for your repo
 1. Open a command line to this project's root directory 
