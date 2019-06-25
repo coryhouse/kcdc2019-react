@@ -1,3 +1,30 @@
+## Prerequisites
+
+Do these steps *before* you arrive at KCDC:
+1. Install [Node 10 or newer](http://nodejs.org)
+1. Install [Git](https://git-scm.com/)
+1. Install [VS Code](https://code.visualstudio.com/)
+1. Install [Prettier extension for VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+1. Install [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+1. Install [React Code Snippets extension for VS Code](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
+1. Click the green "Clone this template" button above.
+1. Enter a name for your repo
+1. Open a command line to this project's root directory 
+1. Run this command to install dependencies: `npm install`
+1. Run this command to start the app: `npm start`
+1. Load http://localhost:3000. You should see a spinning React logo.
+1. Load http://localhost:3001. You should see json-server's landing page.
+
+If you did all the above, you're all set to quickly dive into React at KCDC 2019!
+
+## More Resources
+
+- [Cory's React Courses on Pluralsight](https://pluralsight.com/authors/cory-house)
+- Interested in team training? [reactjsconsulting.com](http://www.reactjsconsulting.com)
+
+-----
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
