@@ -1,6 +1,9 @@
 ## Prerequisites
 
 Do these steps **before** KCDC:
+
+If you have any problems, email cory@reactjsconsulting.com.
+
 1. Install [Node 10 or newer](http://nodejs.org)
 1. Install [Git](https://git-scm.com/)
 1. Install [VS Code](https://code.visualstudio.com/)
@@ -10,8 +13,8 @@ Do these steps **before** KCDC:
 1. Open a command line to the directory where you cloned this repo.
 1. Run this command to install dependencies: `npm install`
 1. Run this command to start the app: `npm start`
-1. Load http://localhost:3000. You should see a spinning React logo.
-1. Load http://localhost:3001. You should see json-server's landing page.
+1. Load http://localhost:3000. You should see [a spinning React logo](https://www.dropbox.com/s/uyy1eporkb6kkwh/Screenshot%202019-06-24%2019.39.07.png?dl=0).
+1. Load http://localhost:3001. You should see [json-server's landing page](https://www.dropbox.com/s/wooq97xyqze3fq2/Screenshot%202019-06-24%2019.40.22.png?dl=0).
 
 If you did all the above, you're all set!
 
