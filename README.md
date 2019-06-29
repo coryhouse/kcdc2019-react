@@ -21,5 +21,5 @@ If you did all the above, you're all set!
 ## Keep in Touch!
 
 - [Cory's React Courses on Pluralsight](https://pluralsight.com/authors/cory-house)
-- Interested in team training? [reactjsconsulting.com](http://www.reactjsconsulting.com)
+- Interested in team training or consulting? [reactjsconsulting.com](http://www.reactjsconsulting.com)
 - I tweet about software as [@housecor](http://www.twitter.com/housecor) on Twitter
