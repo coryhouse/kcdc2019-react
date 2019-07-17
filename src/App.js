@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
+const newSession = {
+  id: null,
+  title: ""
+};
+
 function App() {
   // this will hold our form data
-  const [session, setSession] = useState({
-    id: null,
-    title: ""
-  });
+  const [session, setSession] = useState(newSession);
 
   const [sessions, setSessions] = useState([
     { id: 1, title: "React" },
@@ -30,8 +32,11 @@ function App() {
   function saveSession(event) {
     event.preventDefault(); // don't post back to the server.
     // Assign an id on the client. because YOLO.
-    const newSession = { ...session, id: Math.random() };
-    setSessions([...sessions, newSession]);
+    const sessionToSave = { ...session, id: Math.random() };
+    setSessions([...sessions, sessionToSave]);
+
+    // clear out the form
+    setSession(newSession);
   }
 
   function onChange(event) {
