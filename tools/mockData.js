@@ -82,6 +82,12 @@ const users = [
   { id: 2, email: "bob@example.com", password: "345" }
 ];
 
+const sessions = [
+  { id: 1, title: "React" },
+  { id: 2, title: "C#" },
+  { id: 3, title: "Python" }
+];
+
 const newCourse = {
   id: null,
   title: "",
@@ -94,5 +100,6 @@ module.exports = {
   newCourse,
   courses,
   authors,
-  users
+  users,
+  sessions
 };

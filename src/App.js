@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { getSessions } from "./api/sessionApi";
 
 const newSession = {
   id: null,
@@ -8,12 +9,11 @@ const newSession = {
 function App() {
   // this will hold our form data
   const [session, setSession] = useState(newSession);
+  const [sessions, setSessions] = useState([]);
 
-  const [sessions, setSessions] = useState([
-    { id: 1, title: "React" },
-    { id: 2, title: "C#" },
-    { id: 3, title: "Python" }
-  ]);
+  useEffect(() => {
+    getSessions().then(sessions => setSessions(sessions));
+  }, []);
 
   function deleteSession(id) {
     const newSessions = sessions.filter(session => session.id !== id);
