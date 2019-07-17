@@ -9,7 +9,7 @@ function App() {
 
   function deleteSession(id) {
     const newSessions = sessions.filter(session => session.id !== id);
-    setSessions(newSessions);
+    setSessions(newSessions); // this triggers a re-render because state changed.
   }
 
   function renderSession(session) {
@@ -25,6 +25,7 @@ function App() {
   return (
     <>
       <h1>KCDC Sessions</h1>
+
       <ul>{sessions.map(renderSession)}</ul>
     </>
   );
