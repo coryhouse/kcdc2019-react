@@ -1,9 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App";
 
-const h1Style = { color: "red" };
-
-ReactDOM.render(
-  <h1 style={h1Style}>Hello World</h1>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
