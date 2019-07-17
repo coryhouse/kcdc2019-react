@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
 function App() {
+  // this will hold our form data
+  const [session, setSession] = useState({
+    id: null,
+    title: ""
+  });
+
   const [sessions, setSessions] = useState([
     { id: 1, title: "React" },
     { id: 2, title: "C#" },
@@ -21,11 +27,37 @@ function App() {
     );
   }
 
+  function saveSession(event) {
+    event.preventDefault(); // don't post back to the server.
+    // Assign an id on the client. because YOLO.
+    const newSession = { ...session, id: Math.random() };
+    setSessions([...sessions, newSession]);
+  }
+
+  function onChange(event) {
+    // use event.target.value to update session.title in state
+    const newSession = { ...session, title: event.target.value }; // copy session
+    setSession(newSession);
+  }
+
   // what I return here gets rendered.
   return (
     <>
       <h1>KCDC Sessions</h1>
-
+      <form onSubmit={saveSession}>
+        <h2>Add Session</h2>
+        <div>
+          <label htmlFor="title">Title</label>
+          <br />
+          <input
+            type="text"
+            onChange={onChange}
+            id="title"
+            value={session.title}
+          />
+        </div>
+        <input type="submit" value="Add Session" />
+      </form>
       <ul>{sessions.map(renderSession)}</ul>
     </>
   );
